@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/contact_background"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contact"
+        android:layout_centerVertical="true"
+        android:id="@+id/image_view"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contactsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_view"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_toEndOf="@id/image_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contactsNumber"
+        android:layout_below="@id/contactsName"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/image_view"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_toEndOf="@id/image_view" />
+
+</RelativeLayout>
